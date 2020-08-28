@@ -198,3 +198,13 @@ app/controllers/posts_controller.rb:20:in `create'
   Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.9ms)
+Started POST "/posts" for 174.109.156.77 at 2020-08-28 00:44:36 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EZgBEatHsLtP/VbHooA+t1mGqDaJ3X53x/hEUOYOOF+hUjcBbZf41WpbaZO7YQAfEIvALGijlexeg2U0fasa9A==", "title"=>"Awesome", "description"=>"Great", "commit"=>"Submit Post"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Awesome"], ["description", "Great"], ["created_at", "2020-08-28 00:44:36.971330"], ["updated_at", "2020-08-28 00:44:36.971330"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+No template found for PostsController#create, rendering head :no_content
+Completed 204 No Content in 18ms (ActiveRecord: 2.8ms)
+
+
